@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle
+ -->
+<odoo>
+    <record id="form_wcr_cancel_reason" model="ir.ui.view">
+        <field name="name">form_wcr_cancel_reason_</field>
+        <field name="model">wcr.cancel.reason</field>
+        <field name="arch" type="xml">
+            <form string="Cancel Reason">
+                <separator string="Cancel Reason"/>
+                <field name="cancel_reason"/>
+                <field name="wcr_id" invisible="1"/>
+                <footer>
+                    <button string="Cancel" name="cancel_website_courier_request" type="object" class="oe_highlight"/>
+                    <button string="Close Window" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+	<record id="action_wcr_cancel_reason" model="ir.actions.act_window">
+        <field name="name">Cancel Reason</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wcr.cancel.reason</field>
+        <field name="context">{'default_wcr_id': active_id}</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="form_wcr_cancel_reason"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

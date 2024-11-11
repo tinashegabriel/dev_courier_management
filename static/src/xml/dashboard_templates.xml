@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Template for the project dashboard -->
+<templates id="template" xml:space="preserve">
+    <t t-name="courierdashboard">
+        <div style="max-height: -webkit-fill-available; overflow-y: scroll; background-color:#fff7fd">
+            <div class="mx-5">
+              <div class="row gx-0 mt-3">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button id="downloadBtn" t-on-click="(e) => this.downloadReport(e)" class="btn btn-primary p-2">
+                            <i class="fa fa-file-pdf-o p-1" aria-hidden="true"></i> Print
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Call -->
+
+            <div class="mx-5" id="dashboard" >
+                <t t-call="Courierfilters"/>
+                <t t-call="Couriercounters"/>
+                <t t-call="Couriercharts"/>
+                <t t-call="CourierTables"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="Courierfilters">
+        <div class="card mt-4 filters">
+            <div class="row p-2 m-2 gx-0 gy-2" >  
+                <div class="col-lg-1 my-auto">
+                    <img t-att-src="'data:image/png;base64,' + user_img" class="css-shadow"/>
+                </div>
+                <div class="col-lg-4 pl-1 my-auto">
+                    <h1> <t t-esc="greetings"/>, <t t-esc="user_name"/>.</h1>
+                    <h4>Welcome to your Courier Management Dashboard.</h4>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row gy-2">
+                        <div class="col-lg-3 m-0">
+                            <label for="user_selectionss" class="form-label fw-bolder">User Filter</label>
+                            <select class="form-select" id="user_selections" t-on-change="(ev) => this._onchangeCourierFilter(ev)">
+                                <option value="all">All User</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 m-0">
+                            <label for="partner_selection" class="form-label fw-bolder">Sender Filter</label>
+                            <select class="form-select" id="partner_selection" t-on-change="(ev) => this._onchangeCourierFilter(ev)">
+                                <option value="all">All Sender</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 m-0">
+                            <label for="priority_selection" class="form-label fw-bolder">Priority Filter</label>
+                            <select class="form-select" id="priority_selection" t-on-change="(ev) => this._onchangeCourierFilter(ev)">
+                                <option value="all">All Priority</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 m-0">
+                            <label for="duration_selection" class="form-label fw-bolder">Date Filter</label>
+                            <select class="form-select" id="duration_selection"
+                                    t-on-change="(ev) => this._onchangeCourierFilter(ev)">
+                                <option value="0">Today</option>
+                                <option value="7">Last 7 Days</option>
+                                <option value="28">Last 28 Days</option>
+                                <option value="90">Last 90 Days</option>
+                                <option value="365">Last 365 Days</option>
+                                <option value="all">Lifetime</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    
+    <t t-name="Couriercounters">
+        <div class="mt-5 mb-5">
+            <div class="row text-center gy-2">
+                <div class="col-lg-3"> 
+                    <div class="row">
+                        <div class="col-12">
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_new(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="new_data">
+                                        <t t-esc="new_data.length" />
+                                    </h1>
+                                    <h5>New</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">    
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_new(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="out_of_delivery_data">
+                                        <t t-esc="out_of_delivery_data.length" />
+                                    </h1>
+                                    <h5>Out of delivery</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-3">   
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_new(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="collected_data">
+                                        <t t-esc="collected_data.length" />
+                                    </h1>
+                                    <h5>Collected</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_new(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="delivered_data">
+                                        <t t-esc="delivered_data.length" />
+                                    </h1>
+                                    <h5>Delivered</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">   
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_new(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="dispatched_data">
+                                        <t t-esc="dispatched_data.length" />
+                                    </h1>
+                                    <h5>Dispatched</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_new(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="cancel_data">
+                                        <t t-esc="cancel_data.length" />
+                                    </h1>
+                                    <h5>Cancelled</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">   
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_new(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="intransit_data">
+                                        <t t-esc="intransit_data.length" />
+                                    </h1>
+                                    <h5>In Transit</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="card box" t-on-click="(e) => this.action_all_invoices(e)">
+                                <div class="card-body box-body">
+                                    <h1 id="all_invoice_ids">
+                                        <t t-esc="all_invoice_ids.length" />
+                                    </h1>
+                                    <h5>Total Invoice</h5>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <!-- charts -->
+
+    <t t-name="Couriercharts">
+        <div class="mt-5">
+            <div class="row gy-2">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card table-card" style="overflow-x:clip;">
+                        <div class="card-header">
+                            <div class="row">
+
+                                <div class="col-6 ">    
+                                     <label for="all_stage_chart_selection"
+                                            class="form-label fw-bolder">Chart Type</label>
+                                    <select id="all_stage_chart_selection" class="form-select form-control pull-left"
+                                            t-on-change="(ev) => this._onchangeStatusChart(ev)">
+                                        <option value="bar">Bar</option>
+                                        <option value="line">Line</option>
+                                        <option value="pie">Pie</option>
+                                        <option value="doughnut">Doughnut</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-title text-center p-3" style="font-weight:600; font-size:23px;">
+                          <div class="row">
+                             <div class="col-10">Delivery Status</div>
+                                <div class="col-2">
+                                  <i class="fa fa-download" style="cursor: pointer;" aria-hidden="true" t-on-click="(e) => this._downloadChart(e)"></i>
+                                </div>
+                         </div>
+                            
+                        </div>
+                        <div class="card-body text-center">
+                            <canvas id="all_stage_chart_data" class="bar-chart"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card table-card">
+                        
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 ">
+
+                                    <label for="delivery_state_range_selection"
+                                              class="form-label fw-bolder">No. of Record</label>
+                                    <select id="delivery_state_range_selection" class="form-select form-control pull-left"
+
+                                            t-on-change="(ev) => this._onchangeStateChart(ev)">
+                                         <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                     </select>
+                                </div>
+                                
+                                <div class="col-6 ">
+                                     <label for="delivery_state_chart_selection"
+                                            class="form-label fw-bolder">Chart Type</label>
+                                    <select id="delivery_state_chart_selection" class="form-select form-control pull-left"
+                                            t-on-change="(ev) => this._onchangeStateChart(ev)">
+                                       
+                                        <option value="pie">Pie</option>
+                                        <option value="bar">Bar</option>
+                                        <option value="line">Line</option>
+                                        <option value="doughnut">Doughnut</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-title text-center p-3" style="font-weight:600; font-size:23px;">
+                            <div class="row">
+                             <div class="col-10">Courier Request By state</div>
+                                  <div class="col-2">
+                                     <i class="fa fa-download" style="cursor: pointer;" aria-hidden="true" t-on-click="(e) => this._downloadChart(e)"></i>
+                                  </div>
+                             </div>
+                            </div>
+                        <div class="card-body text-center">
+                            <canvas id="delivery_state_chart_data" class="bar-chart"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 gy-2">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card table-card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 ">
+
+                                    <label for="delivery_country_range_selection"
+                                              class="form-label fw-bolder">No. of Record</label>
+                                    <select id="delivery_country_range_selection" class="form-select form-control pull-left"
+
+                                            t-on-change="(ev) => this._onchangeCountryChart(ev)">
+                                         <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                     </select>
+                                </div>
+                                <div class="col-6 ">     
+                                     
+                                     <label for="delivery_country_chart_selection"
+                                            class="form-label fw-bolder">Chart Type</label>
+                                    <select id="delivery_country_chart_selection" class="form-select form-control pull-left"
+                                            t-on-change="(ev) => this._onchangeCountryChart(ev)">
+                                        <option value="line">Line</option>
+                                        <option value="bar">Bar</option>
+                                        <option value="pie">Pie</option>
+                                        <option value="doughnut">Doughnut</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-title text-center p-3" style="font-weight:600; font-size:23px;">
+                            <div class="row">
+                             <div class="col-10">Courier By Country</div>
+                                  <div class="col-2">
+                                     <i class="fa fa-download" style="cursor: pointer;" aria-hidden="true" t-on-click="(e) => this._downloadChart(e)"></i>
+                                  </div>
+                             </div>
+                            </div>
+                        <div class="card-body text-center">
+                            <canvas id="delivery_country_chart_data" class="bar-chart"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card table-card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 ">
+
+                                    <label for="delivery_type_range_selection"
+                                              class="form-label fw-bolder">No. of Record</label>
+                                    <select id="delivery_type_range_selection" class="form-select form-control pull-left"
+
+                                            t-on-change="(ev) => this._onchangeTypeChart(ev)">
+                                         <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                     </select>
+                                </div>
+                                <div class="col-6 ">
+                                    
+                                     <label for="delivery_type_chart_selection"
+                                            class="form-label fw-bolder">Chart Type</label>
+                                    <select id="delivery_type_chart_selection" class="form-select form-control pull-left"
+                                            t-on-change="(ev) => this._onchangeTypeChart(ev)">
+                                        <option value="doughnut">Doughnut</option>
+                                        <option value="line">Line</option>
+                                        <option value="bar">Bar</option>
+                                        <option value="pie">Pie</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-title text-center p-3" style="font-weight:600; font-size:23px;">
+                             <div class="row">
+                             <div class="col-10">Courier By Type</div>
+                                  <div class="col-2">
+                                     <i class="fa fa-download" style="cursor: pointer;" aria-hidden="true" t-on-click="(e) => this._downloadChart(e)"></i>
+                                  </div>
+                             </div>
+                            </div>
+                        <div class="card-body text-center">
+                            <canvas id="delivery_type_chart_data" class="bar-chart"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <!-- Tables -->
+
+    <t t-name="CourierTables">
+        <div class="row mt-4 gy-2">
+            <div class='col-lg-6 col-md-6 col-12'>
+                <div class="card table-card">
+                    <div class="card-header table-header">
+                        <span>
+                            Collected Courier
+                        </span>
+                    </div>
+                    <table id="my_table_all_collected_list" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Sender</th>
+                                <th>Mobile</th>
+                                <th>R-Date</th>
+                                <th>Delivery Date</th>
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class='col-lg-6 col-md-6 col-12'>
+                <div class="card table-card">
+                    <div class="card-header table-header">
+                        <span>
+                           In Transit
+                        </span>
+                    </div>
+                    <table id="my_table_all_transit_list" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Sender</th>
+                                <th>Mobile</th>
+                                <th>R-Date</th>
+                                <th>Delivery Date</th>
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4 gy-2">
+            <div class='col-lg-6 col-md-6 col-12'>
+                <div class="card table-card">
+                    <div class="card-header table-header">
+                        <span>
+                            In Delivered Courier
+                        </span>
+                    </div>
+                    <table id="my_table_all_delivered_list" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Sender</th>
+                                <th>Mobile</th>
+                                <th>R-Date</th>
+                                <th>Delivery Date</th>
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class='col-lg-6 col-md-6 col-12'>
+                <div class="card table-card ">
+                    <div class="card-header table-header">
+                        <span>
+                            Cancelled Courier
+                        </span>
+                    </div>
+                    <table id="my_table_all_cancel_list" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Sender</th>
+                                <th>Mobile</th>
+                                <th>R-Date</th>
+                                <th>Delivery Date</th>
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+        </div>
+    </t>
+</templates>

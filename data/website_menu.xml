@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle
+ -->
+<odoo>
+    <record id="new_ticket_menu" model="website.menu">
+        <field name="name">Courier Tracking</field> <!-- Name of the menu-->
+        <field name="url">/courier/tracking</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+    <record id="menu_web_make_courier_request" model="website.menu">
+        <field name="name">Courier Request</field> <!-- Name of the menu-->
+        <field name="url">/web_make_new_courier_request</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">21</field>
+    </record>
+</odoo>

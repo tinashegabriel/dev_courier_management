@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_website_frontend" inherit_id="web.assets_frontend" name="Portal Assets" priority="15">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/dev_courier_management/static/src/js/portal.js"></script>
+<!--            <link rel="stylesheet" href="/dev_delivery_tracking/static/src/css/jquery-ui-1.9.1.custom.css" />-->
+        </xpath>
+    </template>
+
+</odoo>

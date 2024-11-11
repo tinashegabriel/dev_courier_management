@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle
+ -->
+<odoo>
+
+    <template id="portal_my_home_request" name="Portal My request : request entries" customize_show="True" inherit_id="portal.portal_my_home" priority="20">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Request</t>
+                <t t-set="url" t-value="'/my/request'"/>
+                <t t-set="placeholder_count" t-value="'request_count'"/>
+            </t>
+        </xpath>
+    </template>
+
+     <!--For icon on menu-->
+    <template id="portal_my_home_law_request" name="Show Law Requests" customize_show="True" inherit_id="portal.portal_my_home" priority="20">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="before">
+            <t t-set="portal_client_category_enable" t-value="True"/>
+        </xpath>
+        <div id="portal_client_category" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="icon" t-value="'/dev_courier_management/static/img/folder.svg'" />
+                <t t-set="title">Courier Request</t>
+                <t t-set="url" t-value="'/my/request'"/>
+                <t t-set="text">Follow or view  your Request</t>
+                <t t-set="placeholder_count" t-value="'request_count'"/>
+            </t>
+        </div>
+    </template>
+
+    
+    <template id="portal_my_home_menu_request" name="Portal layout : Request menu entries" inherit_id="portal.portal_breadcrumbs" priority="20">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'request_courier'" t-attf-class="breadcrumb-item #{'active ' if not request_courier else ''}">
+               Request
+            </li>
+            <li t-if="request_courier" class="breadcrumb-item active">
+                <a t-if="request_courier" t-attf-href="/my/request?{{ keep_query() }}">Request</a> / <t t-esc="request_courier.name"/>
+            </li>
+        </xpath>
+    </template>
+    
+<!--LISTVIEW-->
+    <template id="portal_my_request" name="My Request">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Request</t>
+            </t>
+            <t t-if="not requests">
+                <p>There are currently no Payslip for your account.</p>
+            </t>
+            <t t-if="requests" t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th>Request Number</th>
+                        <th>Sender</th>
+                        <th>Receiver</th>
+                        <th>Registration Date</th>
+                        <th>Delivery Date</th>
+                        <th class="text-left">Total Charge</th>
+                        <th class="text-center">Status</th>
+                    </tr>
+                </thead>
+                <t t-foreach="requests" t-as="l">
+                    <tr>
+                        <td><a t-att-href="l.get_portal_url()"><t t-esc="l.name"/></a></td>
+                        <td><span t-field="l.sender_id.name"/></td>
+                        <td><span t-field="l.receiver_id.name"/></td>
+                        <td><span t-field="l.registration_date" t-options='{"widget": "date"}'/> </td>
+                        <td><span t-field="l.delivery_date" t-options='{"widget": "date"}'/> </td>
+                        <td><span t-field="l.total_charge_amount"/></td>
+                        <td class="text-center"><span t-field="l.state_id"/></td>
+                    </tr>
+                </t>
+            </t>
+        </t>
+    </template>
+<!--    -->
+<!--    -->
+
+<!--    FORMVIEW-->
+    <template id="content_request_portal_content" name="Low Request Portal Content">
+        
+        <div t-attf-class="#{'card-body' if report_type == 'html' else ''}">
+            <div id="informations">
+                <style>
+                    table .my_table{
+                        width:100%;
+                        font-size:13px;
+                    }
+                    .my_table td{
+                        padding:5px;
+                    }
+                    .my_time_table th{
+                        padding:5px;
+                        font-size:13px;
+                        border-bottom:1px solid #f5f5f5;
+                        background:#f5f5f5;
+                    }
+                    .my_time_table td{
+                        padding:10px;
+                        font-size:13px;
+                        
+                    }
+                    .my_time_table .border{
+                        border-bottom:1px solid #f5f5f5;
+                    }
+                </style>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3><span t-field="request_courier.name"/> [ <span t-field="request_courier.state_id.name"/> ] </h3><br/>
+                    </div>
+                </div>
+                <div class="row mt32" >
+                    <table class="table table-sm" style="border:2px solid #FFF">
+                        <tr style="font-size:18px;">
+                            <td width="15%"><b>Sender</b></td>
+                            <td width="35%"></td>
+                            <td width="15%"><b>Receiver</b></td>
+                            <td width="35%"></td>
+                        </tr>
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Name</b></td>
+                            <td width="35%"><span t-field="request_courier.sender_name"/></td>
+                            <td width="15%"><b>Name</b></td>
+                            <td width="35%"><span t-field="request_courier.receiver_name"/></td>
+                        </tr>
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Address</b></td>
+                            <td width="35%"><span t-field="request_courier.sender_street"/></td>
+                            <td width="15%"><b>Address</b></td>
+                            <td width="35%"><span t-field="request_courier.receiver_street"/></td>
+                        </tr>
+                        <tr t-if="request_courier.sender_street2 or request_courier.receiver_street2" style="border:2px solid #FFF">
+                            <td width="15%"><b></b></td>
+                            <td width="35%"><span t-field="request_courier.sender_street2"/></td>
+                            <td width="15%"><b></b></td>
+                            <td width="35%"><span t-field="request_courier.receiver_street2"/></td>
+                        </tr>
+                        <tr t-if="request_courier.sender_city or request_courier.receiver_city" style="border:2px solid #FFF">
+                            <td width="15%"><b></b></td>
+                            <td width="35%"><span t-field="request_courier.sender_city"/>, <span t-field="request_courier.sender_zip"/></td>
+                            <td width="15%"><b></b></td>
+                            <td width="35%"><span t-field="request_courier.receiver_city"/>, <span t-field="request_courier.receiver_zip"/></td>
+                        </tr>
+                        
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b></b></td>
+                            <td width="35%"><span t-field="request_courier.sender_state_id"/>  <span t-field="request_courier.sender_country_id"/></td>
+                            <td width="15%"><b></b></td>
+                            <td width="35%"><span t-field="request_courier.receiver_state_id"/>, <span t-field="request_courier.receiver_country_id"/></td>
+                        </tr>
+                        
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Mobile</b></td>
+                            <td width="35%"><span t-field="request_courier.sender_mobile"/></td>
+                            <td width="15%"><b>Mobile</b></td>
+                            <td width="35%"><span t-field="request_courier.receiver_mobile"/></td>
+                        </tr>
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Email</b></td>
+                            <td width="35%"><span t-field="request_courier.sender_email"/></td>
+                            <td width="15%"><b>Email</b></td>
+                            <td width="35%"><span t-field="request_courier.receiver_email"/></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row mt32">
+                    <br/>
+                </div>
+                <div class="row mt32" >
+                    <table class="table table-sm" style="border:2px solid #FFF">
+                        <tr style="font-size:18px;">
+                            <td width="15%"><b>Courier</b></td>
+                            <td width="35%"></td>
+                            <td width="15%"><b>Internal</b></td>
+                            <td width="35%"></td>
+                        </tr>
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Reg. Date</b></td>
+                            <td width="35%"><span t-field="request_courier.registration_date"/></td>
+                            <td width="15%"><b>Kilometres</b></td>
+                            <td width="35%"><span t-field="request_courier.total_km"/></td>
+                        </tr>
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Delivery Date</b></td>
+                            <td width="35%"><span t-field="request_courier.delivery_date"/></td>
+                            <td width="15%"><b>User</b></td>
+                            <td width="35%"><span t-field="request_courier.user_id"/></td>
+                        </tr>
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Type</b></td>
+                            <td width="35%"><span t-field="request_courier.courier_type_id"/></td>
+                            <td width="15%"><b>Company</b></td>
+                            <td width="35%"><span t-field="request_courier.company_id"/></td>
+                        </tr>
+                        
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Category</b></td>
+                            <td width="35%" colspan="3"><span t-field="request_courier.category_id"/></td>
+                        </tr>
+                        <tr style="border:2px solid #FFF">
+                            <td width="15%"><b>Priority</b></td>
+                            <td width="35%" colspan="3"><span t-field="request_courier.priority_id"/></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row mt32">
+                    <br/>
+                </div>
+                <div class="row mt32" >
+                    <table width="100%" class="my_time_table">
+                    <t t-if="request_courier.courier_lines">
+                        <thead>
+                            <tr>
+                                <th width="18%">Name</th>
+                                <th width="20%">Description</th>
+                                <th width="8%" class="text-center">Quantity</th>
+                                <th width="8%" class="text-right">Weight</th>
+                                <th width="18%" class="text-center">L X W X H</th>
+                                <th width="14%" class="text-right">Price</th>
+                                <th width="14%" class="text-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="request_courier.courier_lines" t-as="line">
+                                <td style="border-bottom:1px solid #f5f5f5"><span t-field="line.name"/></td>
+                                <td style="border-bottom:1px solid #f5f5f5"><span t-field="line.description"/></td>
+                                <td class="text-center" style="border-bottom:1px solid #f5f5f5">
+                                    <span t-field="line.quantity"/>
+                                </td>
+                                <td class="text-right" style="border-bottom:1px solid #f5f5f5">
+                                    <span t-field="line.weight"/>
+                                </td>
+                                <td class="text-center" style="border-bottom:1px solid #f5f5f5">
+                                    <span t-field="line.dimension_id"/>
+                                </td>
+                                <td class="text-right" style="border-bottom:1px solid #f5f5f5">
+                                    <t t-if="line.price > line.dim_price">
+                                        <span t-field="line.price"/>
+                                    </t>
+                                    <t t-if="line.dim_price > line.price">
+                                        <span t-field="line.dim_price"/>
+                                    </t>
+                                </td>
+                                <td class="text-right" style="border-bottom:1px solid #f5f5f5">
+                                    <span t-field="line.total_price"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="text-right"><b>Courier Charge</b></td>
+                                <td class="text-right"><span t-field="request_courier.courier_charge"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="text-right"><b>Distance Charge</b></td>
+                                <td class="text-right"><span t-field="request_courier.distance_charge"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="text-right"><b>Additional Charge</b></td>
+                                <td class="text-right"><span t-field="request_courier.additional_charge"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"></td>
+                                <td class="text-right" style="border-top:1px solid #000"><b>Total Charge</b></td>
+                                <td class="text-right" style="border-top:1px solid #000"><span t-field="request_courier.total_charge_amount"/></td>
+                            </tr>
+                            <tr>
+                                <td><b>Total Parcel&#160;:&#160;<span t-field="request_courier.total_parcel"/></b></td>
+                                <td colspan="6"></td>
+                            </tr>
+                        </tbody>
+                        </t>
+                    </table>
+                </div>
+                <t t-if="request_courier.notes != '&lt;p&gt;&lt;br&gt;&lt;/p&gt;'">
+                    <p style="font-weight: bold;font-size: 14px;margin-bottom: 5px;margin-top: 20px;">
+                        Description
+                    </p>
+                    <p>
+                        <span t-raw="request_courier.notes"/>
+                    </p>
+                </t>
+                <table >
+                <t t-if="request_courier.courier_image_ids">
+                <tr>
+                    <td style="font-weight: bold;font-size: 14px;margin-bottom: 5px;margin-top: 20px;">
+                        Parcel Images
+                    </td>
+                </tr>
+                <tr>
+                       <td>    
+                     	 <t t-foreach="request_courier.courier_image_ids" t-as="line">
+                        <img t-att-src="image_data_uri(line.datas)" style="height: 100px;width: 150px; padding-left:5px; border:1px solid #000000" />
+                         </t>
+                       </td>
+                </tr>
+                </t>
+                </table>
+                <div style="margin-top:35px;" class="row">
+                <div class="col-6" style="font-size: 14px;font-weight:bold;">
+                    Officer Signature
+                    <br/>
+                    <br/>
+                    <br/>
+                    .....................................
+                </div>
+                <div class="col-6 pull-right" style="font-size: 14px;font-weight:bold;text-align:right;">
+                    <t t-if="request_courier.signature">
+                        Customer Signature
+                        <br/>
+                        <img t-att-src="image_data_uri(request_courier.signature)" style="height: 100px;width: 150px;"/>
+                    </t>
+                </div>
+            </div>
+            </div>
+        </div>
+    </template>
+
+   
+    
+    <template id="request_portal_template" name="Request Portal Template" inherit_id="portal.portal_sidebar" primary="True">
+        <xpath expr="//div[hasclass('o_portal_sidebar')]" position="inside">
+            <div class="row mt16 o_portal_sale_sidebar">
+                <t t-call="portal.portal_record_sidebar">
+                    <t t-set="classes" t-value="'col-lg-auto d-print-none'"/>
+                    <t t-set="title">
+                        <h2 class="mb-0"><span t-field="request_courier.name"/></h2>
+                    </t>
+                    <t t-set="entries">
+                        <ul class="list-group list-group-flush flex-wrap flex-row flex-lg-column">
+                            <li class="list-group-item flex-grow-1">
+                                <div class="o_download_pdf btn-toolbar flex-sm-nowrap">
+                                    <div class="btn-group flex-grow-1 mr-1 mb-1">
+                                        <a class="btn btn-secondary btn-block o_download_btn"
+                                           t-att-href="request_courier.get_portal_url(report_type='pdf', download=True)"
+                                           title="Download">
+                                            <i class="fa fa-download"/>
+                                            Download
+                                        </a>
+                                    </div>
+                                    <div class="btn-group flex-grow-1 mb-1" style="margin-left: 5px;">
+                                        <a class="btn btn-secondary btn-block o_print_btn o_portal_invoice_print"
+                                           t-att-href="request_courier.get_portal_url(report_type='pdf')"
+                                           id="print_courier_request" title="Print" target="_blank">
+                                            <i class="fa fa-print"/>
+                                            Print
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                           
+                            <li class="navspy list-group-item pl-0 flex-grow-1" t-ignore="true" role="complementary">
+                                <ul class="nav flex-column bs-sidenav"></ul>
+                            </li>
+                            <li t-if="request_courier.sender_id" class="list-group-item flex-grow-1">
+                                <div class="row flex-nowrap">
+                                     <div t-if="request_courier.sender_id">
+                                        <h6><small class="text-muted">Your contact</small></h6>
+                                        <div class="o_portal_contact_details d-flex flex-column gap-2">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <img class="o_avatar o_portal_contact_img rounded" t-att-src="image_data_uri(request_courier.sender_id.avatar_1024)" alt="Contact"/>
+                                                <div>
+                                                    <span t-field="request_courier.sender_id"
+                                                    t-options='{"widget": "contact", "fields": ["name", "phone"], "no_marker": True}'/>
+                                                    <a href="#discussion" class="d-flex align-items-center gap-2 small fw-bold">
+                                                    Send message
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </t>
+                </t>
+               
+	        <div id="portal_main_request_content" class="col-12 col-lg justify-content-end">
+                    <div t-attf-class="card #{'pb-5' if report_type == 'html' else ''}">
+                        <div t-call="dev_courier_management.content_request_portal_content"/>
+                    </div>
+                    <div id="portal_main_content_request_chatter" class="mt-4">
+                        <h2>Communication</h2>
+                        <t t-call="portal.message_thread">
+                            <t t-set="object" t-value="request_courier"/>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    
+    
+        
+</odoo>

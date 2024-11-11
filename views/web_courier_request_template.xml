@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle
+ -->
+<odoo>
+
+    <template id="web_courier_request_template" name="Courier Request Submit Page" customize_show="True">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure">
+                    <section class="pt8 pb8">
+                        <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title pt16 pb16">
+                                    <center>
+                                        <h4>Submit Courier Request</h4>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="container mt-2">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6" style="">
+                                <b>
+                                    <h5>Sender Details</h5>
+                                </b>
+                                <div class="text-left my-3" name="courier_left_section">
+                                    <div class="mb-0 py-2 col-12 s_website_form_field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Sender Name</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text" class="form-control input_sender_name"
+                                                       name="sender_name" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Mobile</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_sender_mobile"
+                                                       name="sender_mobile" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Email</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_sender_email"
+                                                       name="sender_email" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <center>
+                                                <label class="col-form-label col-sm-auto s_website_form_label"
+                                                       style="width: 200px" for="contact5">
+                                                    <span class="s_website_form_label_content">Sender Address</span>
+                                                </label>
+                                            </center>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Street</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_sender_street"
+                                                       name="sender_street" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Street 2</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_sender_street2"
+                                                       name="sender_street2" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">City</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_sender_city"
+                                                       name="sender_city" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="contact5">
+                                            <span class="s_website_form_label_content">State</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm col-lg-7 col-md-8">
+                                            <select class="form-control input_sender_state_id" name="sender_state_id"
+                                                    id="sender_state_id_id"
+                                                    required="True">
+                                                <option value=""></option>
+                                                <t t-foreach="state_ids or []" t-as="state">
+                                                    <option t-att-value="state.id">
+                                                        <t t-esc="state.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Zip</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_sender_zip"
+                                                       name="sender_zip" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="contact5">
+                                            <span class="s_website_form_label_content">Country</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm col-lg-7 col-md-8">
+                                            <select class="form-control input_sender_country_id_id"
+                                                    name="sender_country_id"
+                                                    id="sender_country_id_id"
+                                                    required="True">
+                                                <option value=""></option>
+                                                <t t-foreach="country_ids or []" t-as="country">
+                                                    <option t-att-value="country.id">
+                                                        <t t-esc="country.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <b>
+                                    <h5>Receiver Details</h5>
+                                </b>
+                                <div class="text-left my-3" name="courier_left_section">
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Receiver Name</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_receiver_name"
+                                                       name="receiver_name" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Mobile</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_receiver_mobile"
+                                                       name="receiver_mobile" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Email</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_receiver_email"
+                                                       name="receiver_email" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <center>
+                                                <label class="col-form-label col-sm-auto s_website_form_label"
+                                                       style="width: 200px" for="contact5">
+                                                    <span class="s_website_form_label_content">Receiver Address</span>
+                                                </label>
+                                            </center>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Street</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_receiver_street"
+                                                       name="receiver_street" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Street 2</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_receiver_street2"
+                                                       name="receiver_street2" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">City</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_receiver_city"
+                                                       name="receiver_city" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="contact5">
+                                            <span class="s_website_form_label_content">State</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm col-lg-7 col-md-8">
+                                            <select class="form-control input_receiver_state_id_id"
+                                                    name="receiver_state_id"
+                                                    id="receiver_state_id_id"
+                                                    required="True">
+                                                <option value=""></option>
+                                                <t t-foreach="state_ids or []" t-as="state">
+                                                    <option t-att-value="state.id">
+                                                        <t t-esc="state.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="contact5">
+                                                <span class="s_website_form_label_content">Zip</span>
+                                                <span class="s_website_form_mark">*</span>
+                                            </label>
+                                            <div class="col-sm col-lg-7 col-md-8">
+                                                <input type="text"
+                                                       class="form-control o_website_form_input input_receiver_zip"
+                                                       name="receiver_zip" required="True"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="contact5">
+                                            <span class="s_website_form_label_content">Country</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm col-lg-7 col-md-8">
+                                            <select class="form-control input_receiver_country_id_id"
+                                                    name="receiver_country_id"
+                                                    id="receiver_country_id_id"
+                                                    required="True">
+                                                <option value=""></option>
+                                                <t t-foreach="country_ids or []" t-as="country">
+                                                    <option t-att-value="country.id">
+                                                        <t t-esc="country.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div name="row">
+                            <div class="col-lg-12 ">
+                                <center>
+                                    <div class="col-lg-3">
+                                        <button class="btn btn-primary web_cr_submit_button">Submit</button>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="oe_structure mt-2"/>
+        </t>
+    </template>
+
+    <template id="web_courier_request_thanks_page" name="Request Submitted"
+              customize_show="True">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_1"/>
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-lg-7 col-xl-6 mr-lg-auto oe_structure">
+                            <section class="pt40 s_text_block pb40 o_colored_level o_cc o_cc1"
+                                     data-snippet="s_text_block" data-name="Text">
+                                <div class="container">
+                                    <span class="d-block fa fa-4x fa-thumbs-up mx-auto rounded-circle bg-primary"/>
+                                    <br/>
+                                    <h1 class="text-center">Thank You!</h1>
+                                    <div class="pb16 pt16 s_hr" data-snippet="s_hr" data-name="Separator">
+                                        <hr class="mx-auto border-top w-50 border-dark text-center"/>
+                                    </div>
+                                    <h5 class="text-center">
+                                        <span class="fa fa-check-circle"/>
+                                        <span>Courier Request has been submitted
+                                            <b>Successfully !</b>
+                                            <br/>Tracking Number is
+                                            <b>
+                                                <t t-esc="courier_tracking_number"/>
+                                            </b>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_2"/>
+            </div>
+        </t>
+    </template>
+</odoo>

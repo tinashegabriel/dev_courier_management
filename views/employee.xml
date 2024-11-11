@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle
+ -->
+<odoo>
+    <record id="form_hr_employee_dev_courier_management" model="ir.ui.view">
+        <field name="name">form_hr_employee_dev_courier_management_</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_title mw-75 ps-0 pe-2']" position="inside">
+                <br/>
+                <field name="cm_delivery_boy"/>
+                <label for="cm_delivery_boy"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_hr_employee_dev_courier_management" model="ir.actions.act_window">
+        <field name="name">Staff</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.employee</field>
+        <field name="domain">[('cm_delivery_boy', '=', True)]</field>
+        <field name="context">{'default_cm_delivery_boy' : True}</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem name="Delivery Boy"
+              id="menu_hr_employee_dev_courier_management2"
+              parent="menu_hr_employee_dev_courier_management"
+              action="action_hr_employee_dev_courier_management"
+              sequence="1"/>
+</odoo>

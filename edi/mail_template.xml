@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<odoo>
+        <record id="rating_courier_request_email_template" model="mail.template">
+            <field name="name">Courier: Rating Request</field>
+            <field name="model_id" ref="dev_courier_management.model_dev_courier_request"/>
+            <field name="subject">{{object.name}}: Rate Our Courier Service Experience and Help Us Serve You Better</field>
+            <field name="email_from">{{object.company_id and object.company_id.email or ''}}</field>
+            <field name="partner_to">{{object.sender_id.id or False}}</field>
+            <field name="body_html" type="html">
+                <div>
+                    <t t-set="access_token" t-value="object._rating_get_access_token()"/>
+                    <t t-set="partner" t-value="object._rating_get_partner()"/>
+                    <table border="0" cellpadding="0" cellspacing="0" width="590" style="width:100%; margin:0px auto;">
+                    <tbody>
+                        <tr><td valign="top" style="font-size: 13px;">
+                            Hello <b><span t-out="object.sender_id.name or ''"/></b>,<br/><br/>
+                            Please take a moment to rate our services related to the Courier Request"<strong> <span t-out="object.name" /></strong>"
+                            <t t-if="object.user_id">
+                                created by <strong> <span t-out="object.user_id.name" /></strong>.<br/>
+                            </t>
+                        </td></tr>
+                        <tr><td style="text-align: center;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" summary="o_mail_notification" style="width:100%; margin: 32px 0px 32px 0px;">
+                                <tr><td style="font-size: 13px;">
+                                    <strong>Tell us how you feel about our service</strong><br/>
+                                    <span style="text-color: #888888">(click on one of these smileys)</span>
+                                </td></tr>
+                                <tr><td style="font-size: 13px;">
+                                    <table style="width:100%;text-align:center;">
+                                        <tr>
+                                            <td>
+                                                <a t-attf-href="/rate/{{ access_token }}/5">
+                                                    <img alt="Satisfied" src="/rating/static/src/img/rating_5.png" title="Satisfied"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a t-attf-href="/rate/{{ access_token }}/3">
+                                                    <img alt="Not satisfied" src="/rating/static/src/img/rating_3.png" title="Not satisfied"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a t-attf-href="/rate/{{ access_token }}/1">
+                                                    <img alt="Highly Dissatisfied" src="/rating/static/src/img/rating_1.png" title="Highly Dissatisfied"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td></tr>
+                            </table>
+                        </td></tr>
+                        <tr><td valign="top" style="font-size: 13px;">
+                            We appreciate your feedback. It helps us to improve continuously.
+                                <br/><span style="margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;">This customer survey has been sent because your courier has been moved to the stage <b> <span t-esc="object.state_id.name"/></b></span>
+                        </td></tr>
+                    </tbody>
+                    </table>
+                </div>
+            </field>
+            <field name="lang">${object._rating_get_partner().lang}</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+</odoo>
+        
+        
+        
+      
+        
+        
+    

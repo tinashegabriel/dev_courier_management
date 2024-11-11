@@ -1,0 +1,46 @@
+20 December 2023
+---------------------------
+v 17.0.1.0
+
+    * Module Created
+---------------------------
+16 February 2024
+v 17.0.1.1
+-Portal Created
+-dev_courier_mgmt_rating
+-dev_courier_mgmt_tracking( JS CALL ISSUE)(CHECK GOPAL SIR)
+
+--------------------------
+
+23 February 2024:
+
+ v 17.0.1.2 - RVO
+        * Module Testing	----------------------> Issue in object(dev.courier.dimension.rule - name_get method not call) when we save entered data 
+        											that's time save to name not with l*w*h.
+        					----------------------> js call issue , not a track record of courier (website)
+        					
+8 March 2024   :   KPO
+---------------------------
+v 17.0.1.3
+
+    ----configuration->ptiority  courency field give column_invisible
+    ------request inside Courier Details page courency field give column_invisible
+    ------ remove comment onchange_state_id method 
+    ------ Add _compute_display_name Object(dev.courier.dimension.rule )
+    ------- Give label Courier Request Delete On Configuration>> Setting
+    -------  Add Communication block on website		
+      
+   *missing 
+  
+  -----dev_courier_mgmt_tracking( JS CALL ISSUE)
+  
+
+
+------------------------------
+5 April 2024
+-----------------------------
+v 17.0.1.4 - RVO
+
+---------------> Dashboard Created
+---------------> Add Dashboard screen in index
+     

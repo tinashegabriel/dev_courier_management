@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="courier_tracking_page">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Courier - Tracking</t>
+            <div id="wrap">
+                <div class="container oe_website_sale py-2">
+                    <div class="row">
+                        <div class="col-12 col-xl">
+                            <div class="oe_cart">
+                                <div class="thanks_msg">
+                                    <center><h3>Courier Tracking.</h3></center>
+                                </div>
+                                <div class="oe_structure clearfix mt-3" id="oe_structure_website_sale_confirmation_1"/>
+                                <div class="row col-12">
+	                            </div>
+                                <div class="oe_structure mt-3" id="oe_structure_website_sale_tracking_2"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3 ">
+	                    <div class="card-body">
+		                    <div class="col-lg-6 offset-lg-3 mt-2 tracking-input-container">
+								<div 
+									class="text-center form-group element-container form-field o_website_form_required_custom">
+									<input type="text" name="order_no" class="form-control tracking-number-input"
+										placeholder="Enter Order No" />
+								</div>
+							</div>
+							<div class="text-center form-group">
+								<button class="btn btn-primary confirm_track_do" style="margin-top:10px;">
+									Track
+									<i class="fa fa-truck"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 dev-tracking-container d-none">
+                       	<center>
+	                       	<div class="col-6">
+		                         <h3 class="text-left mt-5">
+		                             <strong>Tracking Information:</strong>
+		                         </h3>
+		                         <table class="table">
+		                             <tbody>
+		                                 <tr>
+		                                 	<td>
+		                                 		<strong>Status</strong>
+		                                 	</td>
+		                                     <td>
+		                                     	<span class="customer-courier-status" id="customer_courier_status"></span>
+		                                     </td>
+		                                 </tr>
+		                                 
+		                                 <tr>
+		                                 	<td>
+		                                 		<strong>Sender</strong>
+		                                 	</td>
+		                                     <td>
+		                                     	<span class="customer-courier-sender" id="customer_courier_sender"></span>
+		                                     </td>
+		                                 </tr>
+		                                 
+		                                 <tr>
+		                                 	<td>
+		                                 		<strong>Receiver</strong>
+		                                 	</td>
+		                                     <td>
+		                                     	<span class="customer-courier-receiver" id="customer_courier_receiver"></span>
+		                                     </td>
+		                                 </tr>
+		                                 
+		                                 <tr>
+		                                 	<td>
+		                                 		<strong>Delivery Date</strong>
+		                                 	</td>
+		                                     <td>
+		                                     	<span class="customer-courier-delivery-date" id="customer_courier_date"></span>
+		                                     </td>
+		                                 </tr>
+		                                 
+		                             </tbody>
+		                         </table>
+		                     </div>
+		                 </center>
+                    </div>
+                    <div class="col-12 dev-none-tracking-container d-none">
+                       	<center>
+	                       	<div class="col-6">
+		                         <h3 class="text-left mt-5">
+		                             <strong>Tracking Information: Courier Request Not Found</strong>
+		                             
+		                         </h3>
+		                     </div>
+		                 </center>
+                    </div>
+                </div>
+                <div class="oe_structure" id="oe_structure_website_sale_tracking_3"/>
+            </div>
+        </t>
+    </template>
+</odoo>

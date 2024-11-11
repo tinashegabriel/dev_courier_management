@@ -1,0 +1,2318 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dev_courier_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-03 06:20+0000\n"
+"PO-Revision-Date: 2024-06-03 06:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dev_courier_management
+#: model:mail.template,subject:dev_courier_management.template_dev_courier_request_send_by_mail
+msgid "({{object.name}})Courier Request Details"
+msgstr "({{object.name}})Detalles de la solicitud de mensajería"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Additional Charge</b>"
+msgstr "<b>Cargos adicionales</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Address</b>"
+msgstr "<b>DIRECCIÓN</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Category</b>"
+msgstr "<b>Categoría</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Company</b>"
+msgstr "<b>Compañía</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Courier Charge</b>"
+msgstr "<b>Cargos de entrega</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Courier</b>"
+msgstr "<b>Mensajera</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Delivery Date</b>"
+msgstr "<b>Fecha de entrega</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Distance Charge</b>"
+msgstr "<b>Cargo por distancia</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Email</b>"
+msgstr "<b>Correo electrónico</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+msgid "<b>End Date</b> :"
+msgstr "<b>Fecha final</b> :"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Internal</b>"
+msgstr "<b>Interna</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Kilometres</b>"
+msgstr "<b>Kilómetros</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Mobile</b>"
+msgstr "<b>Móvil</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Name</b>"
+msgstr "<b>Nombre</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Priority</b>"
+msgstr "<b>Prioridad</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Receiver</b>"
+msgstr "<b>Receptor</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Reg. Date</b>"
+msgstr "<b>Reg. Fecha</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+msgid "<b>Registration Date</b>"
+msgstr "<b>Fecha de Registro</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.kanban_courier_request_view
+msgid "<b>Sender :</b>"
+msgstr "<b>Remitente:</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Sender</b>"
+msgstr "<b>Remitente</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+msgid "<b>Start Date</b> :"
+msgstr "<b>Fecha de inicio</b> :"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+msgid "<b>Status</b>"
+msgstr "<b>Estado</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Total Charge</b>"
+msgstr "<b>Carga total</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>Type</b>"
+msgstr "<b>Tipo</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "<b>User</b>"
+msgstr "<b>Usuaria</b>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.kanban_courier_request_view
+msgid ""
+"<br/>\n"
+"                                <b>Receiver :</b>"
+msgstr ""
+"<br/>\n"
+"                                <b>Receptor:</b>"
+
+
+#. module: dev_courier_management
+#: model:mail.template,body_html:dev_courier_management.template_dev_courier_request_send_by_mail
+msgid ""
+"<div style=\"font-size:14px;\">\n"
+"                <p>Hello <b><t t-out=\"object.sender_id.name\"></t></b>,\n"
+"                </p>\n"
+"                <br>\n"
+"                <p>Courier Request details are as below</p>\n"
+"                <br>\n"
+"                <p>\n"
+"                    <strong>Registration Date : </strong>\n"
+"                    <t t-out=\"object.get_formatted_date()\"></t>\n"
+"                    <br>\n"
+"                    <strong>Total Charge : </strong>\n"
+"                    <t t-out=\"format_amount(object.total_charge_amount, object.currency_id)\"></t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                </p>\n"
+"                 <p>Find more details in attached PDF(<t t-out=\"object.name\"></t>).</p>\n"
+"                <br>\n"
+"                <br>\n"
+"            </div>\n"
+"        "
+msgstr ""
+"<div style=\"font-size:14px;\">\n"
+"                <p>Hola <b><t t-out=\"object.sender_id.name\"></t></b>,\n"
+"                </p>\n"
+"                <br>\n"
+"                <p>Los detalles de la solicitud de mensajería son los siguientes</p>\n"
+"                <br>\n"
+"                <p>\n"
+"                    <strong>Fecha de Registro : </strong>\n"
+"                    <t t-out=\"object.get_formatted_date()\"></t>\n"
+"                    <br>\n"
+"                    <strong>Carga total : </strong>\n"
+"                    <t t-out=\"format_amount(object.total_charge_amount, object.currency_id)\"></t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                </p>\n"
+"                 <p>Encuentre más detalles en PDF adjunto(<t t-out=\"object.name\"></t>).</p>\n"
+"                <br>\n"
+"                <br>\n"
+"            </div>\n"
+"        "
+
+#. module: dev_courier_management
+#: model:mail.template,body_html:dev_courier_management.rating_courier_request_email_template
+msgid ""
+"<div>\n"
+"                    <t t-set=\"access_token\" t-value=\"object._rating_get_access_token()\"></t>\n"
+"                    <t t-set=\"partner\" t-value=\"object._rating_get_partner()\"></t>\n"
+"                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin:0px auto;\">\n"
+"                    <tbody>\n"
+"                        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                            Hello <b><span t-out=\"object.sender_id.name or ''\"></span></b>,<br><br>\n"
+"                            Please take a moment to rate our services related to the Courier Request\"<strong> <span t-out=\"object.name\"></span></strong>\"\n"
+"                            <t t-if=\"object.user_id\">\n"
+"                                created by <strong> <span t-out=\"object.user_id.name\"></span></strong>.<br>\n"
+"                            </t>\n"
+"                        </td></tr>\n"
+"                        <tr><td style=\"text-align: center;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" summary=\"o_mail_notification\" style=\"width:100%; margin: 32px 0px 32px 0px;\">\n"
+"                                <tr><td style=\"font-size: 13px;\">\n"
+"                                    <strong>Tell us how you feel about our service</strong><br>\n"
+"                                    <span style=\"text-color: #888888\">(click on one of these smileys)</span>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"font-size: 13px;\">\n"
+"                                    <table style=\"width:100%;text-align:center;\">\n"
+"                                        <tr>\n"
+"                                            <td>\n"
+"                                                <a t-attf-href=\"/rate/{{ access_token }}/5\">\n"
+"                                                    <img alt=\"Satisfied\" src=\"/rating/static/src/img/rating_5.png\" title=\"Satisfied\">\n"
+"                                                </a>\n"
+"                                            </td>\n"
+"                                            <td>\n"
+"                                                <a t-attf-href=\"/rate/{{ access_token }}/3\">\n"
+"                                                    <img alt=\"Not satisfied\" src=\"/rating/static/src/img/rating_3.png\" title=\"Not satisfied\">\n"
+"                                                </a>\n"
+"                                            </td>\n"
+"                                            <td>\n"
+"                                                <a t-attf-href=\"/rate/{{ access_token }}/1\">\n"
+"                                                    <img alt=\"Highly Dissatisfied\" src=\"/rating/static/src/img/rating_1.png\" title=\"Highly Dissatisfied\">\n"
+"                                                </a>\n"
+"                                            </td>\n"
+"                                        </tr>\n"
+"                                    </table>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td></tr>\n"
+"                        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                            We appreciate your feedback. It helps us to improve continuously.\n"
+"                                <br><span style=\"margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;\">This customer survey has been sent because your courier has been moved to the stage <b> <span t-esc=\"object.state_id.name\"></span></b></span>\n"
+"                        </td></tr>\n"
+"                    </tbody>\n"
+"                    </table>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div>\n"
+"                    <t t-set=\"access_token\" t-value=\"object._rating_get_access_token()\"></t>\n"
+"                    <t t-set=\"partner\" t-value=\"object._rating_get_partner()\"></t>\n"
+"                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin:0px auto;\">\n"
+"                    <tbody>\n"
+"                        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                            Hello <b><span t-out=\"object.sender_id.name or ''\"></span></b>,<br><br>\n"
+"                            Please take a moment to rate our services related to the Courier Request\"<strong> <span t-out=\"object.name\"></span></strong>\"\n"
+"                            <t t-if=\"object.user_id\">\n"
+"                                created by <strong> <span t-out=\"object.user_id.name\"></span></strong>.<br>\n"
+"                            </t>\n"
+"                        </td></tr>\n"
+"                        <tr><td style=\"text-align: center;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" summary=\"o_mail_notification\" style=\"width:100%; margin: 32px 0px 32px 0px;\">\n"
+"                                <tr><td style=\"font-size: 13px;\">\n"
+"                                    <strong>Tell us how you feel about our service</strong><br>\n"
+"                                    <span style=\"text-color: #888888\">(click on one of these smileys)</span>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"font-size: 13px;\">\n"
+"                                    <table style=\"width:100%;text-align:center;\">\n"
+"                                        <tr>\n"
+"                                            <td>\n"
+"                                                <a t-attf-href=\"/rate/{{ access_token }}/5\">\n"
+"                                                    <img alt=\"Satisfied\" src=\"/rating/static/src/img/rating_5.png\" title=\"Satisfecha\">\n"
+"                                                </a>\n"
+"                                            </td>\n"
+"                                            <td>\n"
+"                                                <a t-attf-href=\"/rate/{{ access_token }}/3\">\n"
+"                                                    <img alt=\"Not satisfied\" src=\"/rating/static/src/img/rating_3.png\" title=\"No satisfecha\">\n"
+"                                                </a>\n"
+"                                            </td>\n"
+"                                            <td>\n"
+"                                                <a t-attf-href=\"/rate/{{ access_token }}/1\">\n"
+"                                                    <img alt=\"Highly Dissatisfied\" src=\"/rating/static/src/img/rating_1.png\" title=\"Altamente insatisfecha\">\n"
+"                                                </a>\n"
+"                                            </td>\n"
+"                                        </tr>\n"
+"                                    </table>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td></tr>\n"
+"                        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                           Agradecemos sus comentarios. Nos ayuda a mejorar continuamente.\n"
+"                                <br><span style=\"margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;\">Esta encuesta para clientes se ha enviado porque su mensajero ha sido trasladado al escenario <b> <span t-esc=\"object.state_id.name\"></span></b></span>\n"
+"                        </td></tr>\n"
+"                    </tbody>\n"
+"                    </table>\n"
+"                </div>\n"
+"            "
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid ""
+"<i class=\"fa fa-download\"/>\n"
+"                                            Download"
+msgstr ""
+"<i class=\"fa fa-download\"/>\n"
+"                                            Descargar"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid ""
+"<i class=\"fa fa-print\"/>\n"
+"                                            Print"
+msgstr ""
+"<i class=\"fa fa-print\"/>\n"
+"                                            Imprimir"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "<i class=\"fa fa-times\" title=\"Image\"/>"
+msgstr ""
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid "<small class=\"text-muted\">Your contact</small>"
+msgstr "<small class=\"text-muted\">Tu contacto</small>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b>Receiver Address</b>\n"
+"                            </span>"
+msgstr ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b>Dirección del destinatario</b>\n"
+"                            </span>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b>Sender Address</b>\n"
+"                            </span>"
+msgstr ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b>Dirección del remitente</b>\n"
+"                            </span>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.res_config_settings_courier_form
+msgid "<span class=\"o_form_label\">Additional Charge Product</span>"
+msgstr "<span class=\"o_form_label\">Producto con cargo adicional</span>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.res_config_settings_courier_form
+msgid "<span class=\"o_form_label\">Courier Product</span>"
+msgstr "<span class=\"o_form_label\">Producto de mensajería</span>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.res_config_settings_courier_form
+msgid "<span class=\"o_form_label\">Courier Request Delete On</span>"
+msgstr "<span class=\"o_form_label\">Solicitud de mensajería Eliminar el</span>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.res_config_settings_courier_form
+msgid "<span class=\"o_form_label\">Distance Charge Product</span>"
+msgstr "<span class=\"o_form_label\">Producto de carga de distancia</span>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "<strong>Delivery Date</strong>"
+msgstr "<strong>Fecha de entrega</strong>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "<strong>Receiver</strong>"
+msgstr "<strong>Receptor</strong>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "<strong>Sender</strong>"
+msgstr "<strong>Remitente</strong>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "<strong>Status</strong>"
+msgstr "<strong>Estado</strong>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "<strong>Tracking Information: Courier Request Not Found</strong>"
+msgstr "<strong>Información de seguimiento: Solicitud de mensajería no encontrada</strong>"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "<strong>Tracking Information:</strong>"
+msgstr "<strong>Información de seguimiento:</strong>"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__access_warning
+msgid "Access warning"
+msgstr "Advertencia de acceso"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_needaction
+msgid "Action Needed"
+msgstr "Accion necesaria"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__active
+msgid "Active"
+msgstr "Activa"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/js/main.js:0
+#, python-format
+msgid "Active Members"
+msgstr "Miembros activas"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de excepción de actividad"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_state
+msgid "Activity State"
+msgstr "Estado de actividad"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de tipo de actividad"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__additional_charge
+msgid "Additional Charge"
+msgstr "Cargos adicionales"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_company__additional_charge_pro_id
+msgid "Additional Charge Product"
+msgstr "Producto con cargo adicional"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__edi_additional_charge
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__edi_additional_charge
+msgid "Additional Charges"
+msgstr "Cargos adicionales"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_config_settings__additional_charge_pro_id
+msgid "Additional Product"
+msgstr "Producto adicional"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "All"
+msgstr "Toda"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "All Priority"
+msgstr "Toda prioridad"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "All Sender"
+msgstr "Todo el remitente"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "All User"
+msgstr "Toda usuaria"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__allow_create_invoice
+msgid "Allow Create Invoice"
+msgstr "Permitir crear factura"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__allow_invoice
+msgid "Allow Invoice"
+msgstr "Permitir factura"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_ir_attachment
+msgid "Attachment"
+msgstr "Adjunto"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "Recuento de archivos adjuntos"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_avg
+msgid "Average Rating"
+msgstr "Puntuación media"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Bar Chart"
+msgstr "Gráfico de barras"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Books Status Chart"
+msgstr "Cuadro de estado de libros"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Cancelled"
+msgstr "Cancelada"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_category
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__category_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__category_id
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_category
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_category_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_category_tree
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_type_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_type_tree
+msgid "Category"
+msgstr "Categoría"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_city
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_city
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "City"
+msgstr "Ciudad"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Clear"
+msgstr "Clara"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.form_dev_courier_request_history
+msgid "Close Window"
+msgstr "Cerrar ventana"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Collected"
+msgstr "Recogida"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__color
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__color
+msgid "Color"
+msgstr "Color"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Column Chart"
+msgstr "Gráfico de columnas"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid "Communication"
+msgstr "Comunicación"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__company_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__company_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__company_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__company_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__company_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: dev_courier_management
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_configration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_res_partner
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_res_partner_dev_courier_management
+#: model:ir.ui.menu,name:dev_courier_management.main_menu_courier_contacts
+#: model:ir.ui.menu,name:dev_courier_management.menu_res_partner_dev_courier_management
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_country_id
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Country"
+msgstr "País"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_partner__courier
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_users__courier
+#: model:ir.module.category,name:dev_courier_management.category_courier
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.res_config_settings_courier_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Courier"
+msgstr "Mensajera"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "Courier - Tracking"
+msgstr "Mensajería - Seguimiento"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_category
+msgid "Courier Category"
+msgstr "Categoría de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__courier_charge
+msgid "Courier Charge"
+msgstr "Cargos de entrega"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_partner__courier_count
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_users__courier_count
+msgid "Courier Counter"
+msgstr "Mostrador de mensajería"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/js/main.js:0
+#: model:ir.actions.client,name:dev_courier_management.action_open_dashboard_courier
+#, python-format
+msgid "Courier Dashboard"
+msgstr "Panel de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_company__cur_delete_state_ids
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_config_settings__cur_delete_state_ids
+msgid "Courier Delete On"
+msgstr "Eliminar mensajería activada"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_courier_request_lines
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Courier Details"
+msgstr "Detalles del mensajero"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_dimension_rule
+msgid "Courier Dimension Rule"
+msgstr "Regla de dimensión de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_distance_rule
+msgid "Courier Distance Rule"
+msgstr "Regla de distancia del mensajero"
+
+#. module: dev_courier_management
+#: model:ir.actions.report,name:dev_courier_management.menu_cr_req_history_tmpl
+msgid "Courier History Report"
+msgstr "Informe del historial de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__courier_lines
+msgid "Courier Lines"
+msgstr "Líneas de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.ui.menu,name:dev_courier_management.menu_dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.res_config_settings_courier_form
+msgid "Courier Management"
+msgstr "Gestión de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_priority
+msgid "Courier Priority"
+msgstr "Prioridad de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_company__courier_product_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_config_settings__courier_product_id
+msgid "Courier Product"
+msgstr "Producto de mensajería"
+
+#. module: dev_courier_management
+#: model:mail.message.subtype,name:dev_courier_management.mt_courier_rating
+msgid "Courier Rating"
+msgstr "Calificación de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_report_dev_courier_management_dev_courier_report
+msgid "Courier Report"
+msgstr "Informe de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_request
+#: model:ir.model.fields,field_description:dev_courier_management.field_account_bank_statement_line__courier_request_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_account_move__courier_request_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_account_payment__courier_request_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__request_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_ir_attachment__courier_request_id
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_request
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_request_root
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.form_res_partner_dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_activity
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_graph
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_tree
+msgid "Courier Request"
+msgstr "Solicitud de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_request_analysis
+#: model:ir.ui.menu,name:dev_courier_management.menu_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.graph_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.pivot_dev_courier_request_analysis
+msgid "Courier Request Analysis"
+msgstr "Análisis de solicitudes de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_request_analysis
+msgid "Courier Request Analysis Report"
+msgstr "Informe de análisis de solicitudes de mensajería"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+msgid "Courier Request Analysis Search"
+msgstr "Búsqueda de análisis de solicitudes de mensajería"
+
+#. module: dev_courier_management
+#: model:mail.template,name:dev_courier_management.template_dev_courier_request_send_by_mail
+msgid "Courier Request Details"
+msgstr "Detalles de la solicitud de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_request_history
+#: model:ir.ui.menu,name:dev_courier_management.menu_dev_courier_request_history1
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.form_dev_courier_request_history
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.main_req_history_tmpl
+msgid "Courier Request History"
+msgstr "Historial de solicitudes de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_stages
+msgid "Courier Stages"
+msgstr "Etapas de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_tags
+msgid "Courier Tags"
+msgstr "Etiquetas de mensajería"
+
+#. module: dev_courier_management
+#: model:website.menu,name:dev_courier_management.new_ticket_menu
+msgid "Courier Tracking"
+msgstr "Seguimiento de mensajería"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "Courier Tracking."
+msgstr "Seguimiento de mensajería."
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_type
+msgid "Courier Type"
+msgstr "Tipo de mensajería"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_weight_rule
+msgid "Courier Weight Rule"
+msgstr "Regla de peso del mensajero"
+
+#. module: dev_courier_management
+#: model:mail.template,name:dev_courier_management.rating_courier_request_email_template
+msgid "Courier: Rating Request"
+msgstr "Mensajería: Solicitud de calificación"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Create Invoice"
+msgstr "Crear factura"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type__create_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type__create_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+msgid "Creation Date"
+msgstr "Fecha de creación"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__currency_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__currency_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__currency_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__currency_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__currency_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__currency_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__currency_id
+msgid "Currency"
+msgstr "Divisa"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Custom Date Range"
+msgstr "Rango de fechas personalizado"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__access_url
+msgid "Customer Portal URL"
+msgstr "URL del portal del cliente"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Customer Signature"
+msgstr "Firma del cliente"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid ""
+"Customer Signature\n"
+"                        <br/>"
+msgstr ""
+"Firma del cliente\n"
+"                        <br/>"
+
+#. module: dev_courier_management
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_dashboard_root
+msgid "Dashboard"
+msgstr "Panel"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/controller/portal_request.py:0
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.kanban_courier_request_view
+msgid "Delete"
+msgstr "Borrar"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Delivered"
+msgstr "Entregada"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__delivery_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__delivery_date
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+#, python-format
+msgid "Delivery Date"
+msgstr "Fecha de entrega"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__description
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "Description"
+msgstr "Descripción"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Description . . ."
+msgstr "Descripción . . ."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__dim_price
+msgid "Dimension Price"
+msgstr "Precio de dimensión"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_dimension_rule
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_dimension_rule
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_dimension_rule_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_dimension_rule_tree
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_distance_rule_tree
+msgid "Dimension Price Rules"
+msgstr "Reglas de precio de dimensión"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Dispatched"
+msgstr "Enviada"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type__display_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: dev_courier_management
+#: model:ir.model.fields.selection,name:dev_courier_management.selection__dev_courier_request__rating_text__ko
+msgid "Dissatisfied"
+msgstr "Insatisfecha"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__distance_charge
+msgid "Distance Charge"
+msgstr "Cargo por distancia"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__edi_distance_charge
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__edi_distance_charge
+msgid "Distance Charges"
+msgstr "Cargos de distancia"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/distance_price_rule.py:0
+#, python-format
+msgid "Distance From must be less of Distance To."
+msgstr "La distancia desde debe ser menor que la distancia hasta."
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_distance_rule
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_distance_rule
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_distance_rule_form
+msgid "Distance Price Rules"
+msgstr "Reglas de precio de distancia"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_company__distance_product_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_res_config_settings__distance_product_id
+msgid "Distance Product"
+msgstr "Producto de distancia"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/distance_price_rule.py:0
+#, python-format
+msgid "Distance must be positive."
+msgstr "La distancia debe ser positiva."
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Doughnut Chart"
+msgstr "Gráfico de anillos"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid "Download"
+msgstr "Descargar"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.kanban_courier_request_view
+msgid "Dropdown menu"
+msgstr "Menú desplegable"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.kanban_courier_request_view
+msgid "Edit"
+msgstr "Editar"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__email_cc
+msgid "Email cc"
+msgstr "CC de correo electrónico"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__end_date
+msgid "End Date"
+msgstr "Fecha final"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid "Enter Order No"
+msgstr "Introduzca el número de pedido"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__feedback_date
+msgid "Feedback Date"
+msgstr "Fecha de comentarios"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__fold
+msgid "Fold in Kanban"
+msgstr "Doblar en Kanban"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__fold
+msgid "Folded in Kanban"
+msgstr "Doblado en Kanban"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_follower_ids
+msgid "Followers"
+msgstr "Seguidoras"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socias)"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icono de fuente impresionante, p. tareas fa"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__from_km
+msgid "From KM"
+msgstr "Desde KM"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__from_weight
+msgid "From Weight"
+msgstr "Del peso"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/weight_rule.py:0
+#, python-format
+msgid "From Weight must be less of To Weight"
+msgstr "Desde el peso debe ser menor que hasta el peso."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__signature_name
+msgid "Full Name"
+msgstr "Nombre completo"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__has_message
+msgid "Has Message"
+msgstr "Tiene mensaje"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__height
+msgid "Height"
+msgstr "Altura"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type__id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__id
+msgid "ID"
+msgstr "IDENTIFICACIÓN"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, los mensajes nuevos requieren su atención."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__message_has_error
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "In Transit"
+msgstr "En tránsito"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Internal"
+msgstr "Interna"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__invoice_count
+msgid "Invoice Count"
+msgstr "Recuento de facturas"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/js/main.js:0
+#, python-format
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidora"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_account_move
+msgid "Journal Entry"
+msgstr "Entrada de diario"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__total_km
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__total_km
+msgid "Kilometres"
+msgstr "Kilómetros"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__dimension_id
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "L X W X H"
+msgstr "LARGO X ANCHO X ALTO"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type____last_update
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Last Seven Days"
+msgstr "Últimos siete días"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type__write_uid
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type__write_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Last Week"
+msgstr "La semana pasada"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__length
+msgid "Length"
+msgstr "Longitud"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/dimension_price_rule.py:0
+#, python-format
+msgid "Length, Width and Height must be positive."
+msgstr "El largo, el ancho y el alto deben ser positivos."
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Line Area"
+msgstr "Área de línea"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Line Chart"
+msgstr "Gráfico de linea"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunto principal"
+
+#. module: dev_courier_management
+#: model:res.groups,name:dev_courier_management.group_courier_manager
+msgid "Manager"
+msgstr "Gerente"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Memberships By Package Chart"
+msgstr "Tabla de membresías por paquete"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de entrega de mensaje"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Fecha límite de mi actividad"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+msgid "My Request"
+msgstr "Mi petición"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_category__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_tags__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_type__name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__name
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+msgid "Name"
+msgstr "Nombre"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "New"
+msgstr "Nueva"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha límite para la próxima actividad"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la próxima actividad"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: dev_courier_management
+#: model:ir.model.fields.selection,name:dev_courier_management.selection__dev_courier_request__rating_text__none
+msgid "No Rating yet"
+msgstr "Aún no hay calificación"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "No Records Found."
+msgstr "No se encontraron registros."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Number"
+msgstr "Número"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren acción"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid ""
+"Officer Signature\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    ....................................."
+msgstr ""
+"Firma del oficial\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    ....................................."
+#. module: dev_courier_management
+#: model:ir.model.fields.selection,name:dev_courier_management.selection__dev_courier_request__rating_text__ok
+msgid "Okay"
+msgstr "Bueno"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Other Information"
+msgstr "Otra información"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Out Of Delivery"
+msgstr "En curso de entrega"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__courier_image_ids
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Parcel Images"
+msgstr "Imágenes de parcelas"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Penalty By Members Chart"
+msgstr "Penalización por miembros Char"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Pie Chart"
+msgstr "Gráfico circular"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_pivot
+msgid "Pipeline Analysis"
+msgstr "Análisis de tuberías"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/courier_request.py:0
+#, python-format
+msgid "Please Create Sale Journal"
+msgstr "Por favor cree un diario de ventas"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/courier_request.py:0
+#, python-format
+msgid "Please Select Additional Charge Product in Courier Setting."
+msgstr "Seleccione Producto con cargo adicional en la configuración de mensajería."
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/courier_request.py:0
+#, python-format
+msgid "Please Select Courier Product in Courier Setting."
+msgstr "Seleccione Producto de mensajería en Configuración de mensajería."
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/courier_request.py:0
+#, python-format
+msgid "Please Select Distance Charge Product in Courier Setting."
+msgstr "Seleccione el producto de cargo por distancia en la configuración de mensajería."
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/js/main.js:0
+#, python-format
+msgid "Please enter start date and end date"
+msgstr "Por favor ingrese la fecha de inicio y la fecha de finalización"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__access_url
+msgid "Portal Access URL"
+msgstr "URL de acceso al portal"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__price
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__price
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_priority__price
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__price
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "Price"
+msgstr "Precio"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.form_dev_courier_request_history
+msgid "Print PDF"
+msgstr "Imprimir PDF"
+
+#. module: dev_courier_management
+#: model:ir.actions.report,name:dev_courier_management.menu_dev_courier_request_report
+msgid "Print Request"
+msgstr "Solicitud de impresión"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_priority
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__priority_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__priority_id
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_priority
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_priority_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_priority_tree
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_weight_rule_form
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__quantity
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "R - Date"
+msgstr "R - Fecha"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__feedback_rate
+msgid "Rate"
+msgstr "Tasa"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_ids
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_text
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Rating"
+msgstr "Clasificación"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_avg_text
+msgid "Rating Avg Text"
+msgstr "Texto promedio de calificación"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_last_feedback
+msgid "Rating Last Feedback"
+msgstr "Calificación Último comentario"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_last_image
+msgid "Rating Last Image"
+msgstr "Calificación Última imagen"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_last_value
+msgid "Rating Last Value"
+msgstr "Calificación último valor"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_percentage_satisfaction
+msgid "Rating Satisfaction"
+msgstr "Calificación de satisfacción"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__rating_template_id
+msgid "Rating Template"
+msgstr "Plantilla de calificación"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_last_text
+msgid "Rating Text"
+msgstr "Texto de calificación"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__rating_count
+msgid "Rating count"
+msgstr "Recuento de calificaciones"
+
+#. module: dev_courier_management
+#: model:mail.message.subtype,description:dev_courier_management.mt_courier_rating
+msgid "Ratings"
+msgstr "Calificaciones"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_id
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Receiver"
+msgstr "Receptor"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_country_id
+msgid "Receiver Country"
+msgstr "País receptor"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_email
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_email
+msgid "Receiver Email"
+msgstr "Correo electrónico del destinatario"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_mobile
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_mobile
+msgid "Receiver Mobile"
+msgstr "Receptor Móvil"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_state_id
+msgid "Receiver State"
+msgstr "Estado del receptor"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__registration_date
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__registration_date
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+msgid "Registration Date"
+msgstr "Fecha de Registro"
+
+#. module: dev_courier_management
+#: model:ir.ui.menu,name:dev_courier_management.main_menu_courier_reporting
+msgid "Reporting"
+msgstr "Informes"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_request
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_home_menu_request
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_home_request
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_calendar
+msgid "Request"
+msgstr "Pedido"
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_dev_courier_request_history
+msgid "Request History Report"
+msgstr "Informe de historial de solicitudes"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+msgid "Request Number"
+msgstr "número de solicitud"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/courier_request.py:0
+#, python-format
+msgid "Request can be deleted only in '%s' states !"
+msgstr "¡La solicitud solo se puede eliminar en los estados '%s'!"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/controller/portal_request.py:0
+#, python-format
+msgid "Request viewed by customer"
+msgstr "Solicitud vista por la cliente"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__review
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Review"
+msgstr "Revisar"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: dev_courier_management
+#: model:ir.model.fields.selection,name:dev_courier_management.selection__dev_courier_request__rating_text__top
+msgid "Satisfied"
+msgstr "Satisfecha"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Scatter Chart"
+msgstr "Gráfico de dispersión"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__access_token
+msgid "Security Token"
+msgstr "Token de seguridad"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Send by Email"
+msgstr "Enviar por correo electrónico"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_template
+msgid "Send message"
+msgstr "Enviar mensaje"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_id
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+#, python-format
+msgid "Sender"
+msgstr "Remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_city
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_city
+msgid "Sender City"
+msgstr "Ciudad del remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_country_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_country_id
+msgid "Sender Country"
+msgstr "País del remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_email
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_email
+msgid "Sender Email"
+msgstr "Correo electrónico del remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_mobile
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_mobile
+msgid "Sender Mobile"
+msgstr "Remitente Móvil"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_name
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_name
+msgid "Sender Name"
+msgstr "Nombre del remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_state_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_state_id
+msgid "Sender State"
+msgstr "Estado del remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_street
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_street
+msgid "Sender Street"
+msgstr "Calle del remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_street2
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_street2
+msgid "Sender Street2"
+msgstr "Calle del remitente2"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__sender_zip
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__sender_zip
+msgid "Sender Zip"
+msgstr "Código postal del remitente"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_stages__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_res_config_setting_courier
+msgid "Setting"
+msgstr "Configuración"
+
+#. module: dev_courier_management
+#: model:ir.ui.menu,name:dev_courier_management.courier_setting_menu
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__signature
+msgid "Signature"
+msgstr "Firma"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__signature_date
+msgid "Signature Date"
+msgstr "Fecha de firma"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_stages
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_stages
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_stages_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_stages_tree
+msgid "Stages"
+msgstr "Etapas"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_history__start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/js/main.js:0
+#, python-format
+msgid "Start date should be less than end date"
+msgstr "La fecha de inicio debe ser menor que la fecha de finalización."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_state_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__state_id
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "State"
+msgstr "Estado"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__state_id
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+msgid "Status"
+msgstr "Estado"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades.\n"
+"Vencida: la fecha de vencimiento ya ha pasado\n"
+"Hoy: la fecha de la actividad es hoy.\n"
+"Planificado: Actividades futuras."
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_street
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_street
+msgid "Street"
+msgstr "Calle"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Street 2..."
+msgstr "Calle # 2..."
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Street..."
+msgstr "Calle..."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_street2
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_street2
+msgid "Street2"
+msgstr "Calle # 2"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__total_price
+msgid "Subtotal"
+msgstr "Total parcial"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_activity
+msgid "TO"
+msgstr "A"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_tags
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__tag_ids
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_tags
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_tags_form
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_tags_tree
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+msgid "There are currently no Payslip for your account."
+msgstr "Actualmente no hay ningún recibo de pago para su cuenta."
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "This Month"
+msgstr "Este mes"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "This Week"
+msgstr "Esta semana"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "This Year"
+msgstr "Este año"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/__init__.py:0
+#, python-format
+msgid "This application can be installed only on Odoo version 16.0"
+msgstr "Esta aplicación solo se puede instalar en Odoo versión 16.0"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__fold
+msgid ""
+"This stage is folded in the kanban view when there are no records in that "
+"stage to display."
+msgstr ""
+"Esta etapa se pliega en la vista kanban cuando no hay registros en esa "
+"escenario para mostrar."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_distance_rule__to_km
+msgid "To KM"
+msgstr "A KM"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__to_weight
+msgid "To Weight"
+msgstr "Pesar"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Today"
+msgstr "Hoy"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Top valuable Members Chart"
+msgstr "Tabla de miembros más valiosos"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "Total"
+msgstr "Total"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__total_charge_amount
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__total_charge_amount
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.portal_my_request
+msgid "Total Charge"
+msgstr "Carga total"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__total_parcel
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "Total Parcel"
+msgstr "Paquete total"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "Total Parcel :"
+msgstr "Paquete total:"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Total invoice"
+msgstr "Total de la factura"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.courier_tracking_page
+msgid ""
+"Track\n"
+"\t\t\t\t\t\t\t\t\t<i class=\"fa fa-truck\"/>"
+msgstr ""
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_type
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__courier_type_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__courier_type_id
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_type
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.search_dev_courier_request_analysis
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_filter
+msgid "Type"
+msgstr "Tipo"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de actividad de excepción registrada."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__uom_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_weight_rule__uom_id
+msgid "Unit of Measure"
+msgstr "Unidad de medida"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_stages__sequence
+msgid "Used to order stages. Lower is better."
+msgstr "Se utiliza para ordenar etapas. Más bajo es mejor."
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__user_id
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__user_id
+#: model:res.groups,name:dev_courier_management.group_courier_user
+msgid "User"
+msgstr "Usuaria"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "View"
+msgstr "Vista"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,help:dev_courier_management.field_dev_courier_request__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación del sitio web"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.dev_courier_report_temp
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.request_portal_content
+msgid "Weight"
+msgstr "Peso"
+
+#. module: dev_courier_management
+#: model:ir.ui.menu,name:dev_courier_management.menu_courier_weight_rule
+msgid "Weight Pirce Rules"
+msgstr "Reglas de peso"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__price
+msgid "Weight Price"
+msgstr "Peso Precio"
+
+#. module: dev_courier_management
+#: model:ir.actions.act_window,name:dev_courier_management.action_dev_courier_weight_rule
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_weight_rule_tree
+msgid "Weight Price Rules"
+msgstr "Reglas de precio de peso"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_courier_request_lines__weight
+msgid "Weight(KG)"
+msgstr "Peso (kilogramos)"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_dimension_rule__width
+msgid "Width"
+msgstr "Ancho"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Yesterday"
+msgstr "Ayer"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "ZIP"
+msgstr "CREMALLERA"
+
+#. module: dev_courier_management
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request__receiver_zip
+#: model:ir.model.fields,field_description:dev_courier_management.field_dev_courier_request_analysis__receiver_zip
+msgid "Zip"
+msgstr "Cremallera"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.view_dev_courier_request_form
+msgid "no-image"
+msgstr "Sin imágen"
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/controller/portal_request.py:0
+#, python-format
+msgid "number"
+msgstr "número"
+
+#. module: dev_courier_management
+#: model_terms:ir.ui.view,arch_db:dev_courier_management.form_dev_courier_request_history
+msgid "or"
+msgstr ""
+
+#. module: dev_courier_management
+#: model:ir.model,name:dev_courier_management.model_report_dev_courier_management_cr_req_history_tmpl
+msgid "report.dev_courier_management.cr_req_history_tmpl"
+msgstr ""
+
+#. module: dev_courier_management
+#. odoo-python
+#: code:addons/dev_courier_management/models/courier_request.py:0
+#, python-format
+msgid "request"
+msgstr "pedido"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "select Partner"
+msgstr "seleccione Socio"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "select Range"
+msgstr "seleccione rango"
+
+#. module: dev_courier_management
+#. odoo-javascript
+#: code:addons/dev_courier_management/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "select User"
+msgstr "seleccione Usuario"
+
+#. module: dev_courier_management
+#: model:res.groups,comment:dev_courier_management.group_courier_manager
+msgid "user will access all courier Details."
+msgstr "El usuario accederá a todos los detalles del servicio de mensajería."
+
+#. module: dev_courier_management
+#: model:res.groups,comment:dev_courier_management.group_courier_user
+msgid "user will have access own courier Details."
+msgstr "El usuario tendrá acceso a sus propios detalles de mensajería."
+
+#. module: dev_courier_management
+#: model:mail.template,report_name:dev_courier_management.template_dev_courier_request_send_by_mail
+msgid "{{object.name or ''}}"
+msgstr ""
+
+#. module: dev_courier_management
+#: model:mail.template,subject:dev_courier_management.rating_courier_request_email_template
+msgid ""
+"{{object.name}}: Rate Our Courier Service Experience and Help Us Serve You "
+"Better"
+msgstr ""
+"{{object.name}}: Califique nuestra experiencia en servicio de mensajería y ayúdenos a servirle "
+"Mejor"
